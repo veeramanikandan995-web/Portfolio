@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veeramanikandan | Portfolio</title>
+  <style>
+    /* --- Global Styling --- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.5rem;
+      color: #f39c12;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+    nav ul li a:hover {
+      color: #f39c12;
+    }
+
+    section {
+      padding: 100px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    /* Hero Section */
+    #home {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);
+      color: #2c3e50;
+      text-align: center;
+    }
+    #home h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    #home p {
+      font-size: 1.2rem;
+    }
+
+    /* About Section */
+    #about p {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+
+    /* Education Section */
+    .edu-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      margin: 10px 0;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Skills Section */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      text-align: center;
+    }
+    .skill-card {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill-card:hover {
+      transform: scale(1.05);
+    }
+
+    /* Contact Section */
+    #contact p {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Veeramanikandan</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Hi, Veeramanikandan  👋</h1>
+    <p>BCA Student | 2nd Year</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I am Veeramanikandan, a 2nd year BCA student. I am passionate about learning new technologies,
+      improving my coding skills, and exploring web development.
+    </p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="edu-box">
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p>2nd Year Student</p>
+      <p>Department of BCA</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill-card">HTML</div>
+      <div class="skill-card">CSS</div>
+      <div class="skill-card">JavaScript</div>
+      <div class="skill-card">Java</div>
+      <div class="skill-card">C Programming</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: veeramanikandan995@gmail.com</p>
+    
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Veeramanikandan | Portfolio Website</p>
+  </footer>
+
+  <script>
+    // Smooth Scroll Effect
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href"))
+          .scrollIntoView({ behavior: "smooth" });
+      });
+    });
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+      <h1 class="title">Hello World! </h1>
+      <p id="currentTime"></p>
+      <script src="script.js"></script>
+  </body>
+</html>
